@@ -1,5 +1,7 @@
 = FTGO example application
 
+Kelompok 1B D4 - 3B Teknik Informatika 
+
 This is the example code for my book https://microservices.io/book[Microservice patterns].
 
 image::http://microservices.io/i/Microservices-Patterns-Cover.png[width=50%]
