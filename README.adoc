@@ -1,4 +1,4 @@
-= FTGO example application
+= FTGO example application (diedit oleh regi)
 
 This is the example code for my book https://microservices.io/book[Microservice patterns].
 
