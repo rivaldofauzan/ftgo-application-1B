@@ -221,3 +221,5 @@ docker run -p 8889:8888 -e DOCKER_DIAGNOSTICS_PORT=8889 -e DOCKER_HOST_IP \
 If you want to run Java services/tests within your IDE on your desktop/laptop AND  the Docker containers are not accessible via `localhost` THEN you will need to set `DOCKER_HOST_IP` within your IDE.
 How to do this depends on your operating system and IDE.
 For example, I find it convenient to launch my IDE from the command line and after setting this environment variable.
+
+=== Test Update Readme - Ferdy
