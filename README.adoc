@@ -245,7 +245,7 @@ For example, I find it convenient to launch my IDE from the command line and aft
 } | PASS | xref:A-TS01[Attachment TS01]
 
 
-| TC02 | GET | /consumers/{consumerId} | consumers/1 | {
+| TC02 | GET | /consumers/{consumerId} | /consumers/1 | {
   "consumerId": 0,
   "name": {
     "firstName": "rivaldo",
@@ -253,14 +253,54 @@ For example, I find it convenient to launch my IDE from the command line and aft
   }
 } | PASS | xref:A-TS02[Attachment TS02]
 
+
+| TC03 | POST | /restaurants | Create Restaurant :
+{
+  "address": {
+    "city": "Kota Bandung",
+    "state": "Indonesia"
+    "street1": "Jl. Sarijadi no. 116",
+    "street2": "RT 05/ RW 02"
+    "zip": "40165",
+  },
+  "menu": {
+    "menuItems": [
+      {
+        "id": "0",
+        "name": "Pancong",
+        "price": "10000"
+      }
+    ]
+  },
+  "name": "Barratie"
+} | {
+  "id": 1
+} | PASS | xref:A-TS03[Attachment TS03]
+
+
+| TC04 | GET | /restaurants/{restaurantId} | /restaurants/1 | {
+  "id": 1,
+  "name": "Barratie"
+} | PASS | xref:A-TS04[Attachment TS04]
+
+
 |===
 
 === Attachment Result
 <<A-TS01, Attachment Result TS01>>
 
-image::./attachment-ts/TS01.jpg
+image::attachment-ts/TS01.jpg
 
 <<A-TS02, Attachment Result TS02>>
 
-image::./attachment-ts/TS02.jpg
+image::attachment-ts/TS02.jpg
+
+<<A-TS03, Attachment Result TS03>>
+
+image::attachment-ts/TS03.jpg
+
+<<A-TS04, Attachment Result TS04>>
+
+image::attachment-ts/TS04.jpg
+
 
