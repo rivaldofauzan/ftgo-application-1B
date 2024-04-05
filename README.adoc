@@ -1,7 +1,11 @@
-= FTGO example application ==
-* Kelompok B1 haiii halooo
+= FTGO example application
 
-Kelompok 1B D4 - 3B Teknik Informatika 
+== Kelompok 1 3B-D4
+* Aini Diah Rahmawati - 211524033
+* Ghessa Theniana - 211524042
+* Mochamad Ferdy Fauzan - 211524049
+* Regi Purnama - 211524057
+* Rivaldo Fauzan Robani - 211524060
 
 This is the example code for my book https://microservices.io/book[Microservice patterns].
 
@@ -224,4 +228,37 @@ If you want to run Java services/tests within your IDE on your desktop/laptop AN
 How to do this depends on your operating system and IDE.
 For example, I find it convenient to launch my IDE from the command line and after setting this environment variable.
 
-=== Test Update Readme - Ferdy
+== Test Scenario
+[cols="1,2,2,3,3,2,2"]
+.Test Scenario
+|===
+| Test Id | Method | Endpoint | Test Data | Actual Result | Result | Attachment Result
+
+| TC01 | POST | /consumers | Create Consumer :
+{
+  "name": {
+    "firstName": "rivaldo",
+    "lastName": "fauzan"
+  }
+} | {
+  "consumerId": 1
+} | PASS | xref:A-TS01[Attachment TS01]
+
+
+| TC02 | GET | /consumers/{consumerId} | consumers/1 | {
+  "consumerId": 0,
+  "name": {
+    "firstName": "rivaldo",
+    "lastName": "fauzan"
+  }
+} | PASS | xref:A-TS02[Attachment TS02]
+
+|===
+
+.Attachment Result
+<<A-TS01, Attachment Result TS01>>
+image::https://drive.google.com/file/d/1r5RS2xAcoXe30VRAs-wkPUp12beSRYYv/view?usp=sharing
+
+<<A-TS02, Attachment Result TS02>>
+image::https://drive.google.com/file/d/11QDt0e8mAa2Hk6HKjRWjN5yAusdGgZ_g/view?usp=sharing
+
