@@ -258,9 +258,9 @@ For example, I find it convenient to launch my IDE from the command line and aft
 === Attachment Result
 <<A-TS01, Attachment Result TS01>>
 
-image::attachment-ts/TS01.jpg
+image::./attachment-ts/TS01.jpg
 
 <<A-TS02, Attachment Result TS02>>
 
-image::attachment-ts/TS02.jpg
+image::./attachment-ts/TS02.jpg
 
