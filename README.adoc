@@ -307,9 +307,9 @@ For example, I find it convenient to launch my IDE from the command line and aft
 } | PASS | xref:A-TS05[Attachment TS05]
 
 
-| TC06 | GET | ​/orders​/{orderId} | {
+| TC06 | GET | ​/orders​/{orderId} | 
   /orders/1
-} | {
+ | {
   "orderId": 1,
   "state": "APPROVED",
   "orderTotal": "50000.00"
