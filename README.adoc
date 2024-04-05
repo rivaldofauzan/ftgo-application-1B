@@ -284,6 +284,37 @@ For example, I find it convenient to launch my IDE from the command line and aft
 } | PASS | xref:A-TS04[Attachment TS04]
 
 
+| TC05 | POST | /orders | Create Orders :
+{
+  "consumerId": 1,
+  "deliveryAddress": {
+    "city": "Bandung",
+    "state": "Indonesia",
+    "street1": "Jl.Sarijadi No. 54",
+    "street2": "RT 08 RW 02",
+    "zip": "40162"
+  },
+  "deliveryTime": "2024-04-05T13:18:29.028Z",
+  "lineItems": [
+    {
+      "menuItemId": "0",
+      "quantity": 5
+    }
+  ],
+  "restaurantId": 1
+} | {
+   "orderId": 1
+} | PASS | xref:A-TS05[Attachment TS05]
+
+
+| TC06 | GET | ​/orders​/{orderId} | {
+  /orders/1
+} | {
+  "orderId": 1,
+  "state": "APPROVED",
+  "orderTotal": "50000.00"
+} | PASS | xref:A-TS06[Attachment TS06]
+
 |===
 
 === Attachment Result
@@ -302,5 +333,15 @@ image::attachment-ts/TS03.jpg
 <<A-TS04, Attachment Result TS04>>
 
 image::attachment-ts/TS04.jpg
+
+<<A-TS05, Attachment Result TS05>>
+
+image::attachment-ts/TS05.jpg
+
+<<A-TS06, Attachment Result TS06>>
+
+image::attachment-ts/TS06.jpg
+
+
 
 
