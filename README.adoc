@@ -315,6 +315,29 @@ For example, I find it convenient to launch my IDE from the command line and aft
   "orderTotal": "50000.00"
 } | PASS | xref:A-TS06[Attachment TS06]
 
+| TC07 | POST | ​/orders​/{orderId}​/cancel | /orders/1/cancel
+ | {
+  "orderId": 1,
+  "state": "CANCELLED",
+  "orderTotal": "50000.00"
+} | PASS | xref:A-TS07[Attachment TS07]
+
+| TC08 | POST | /orders​/{orderId}​/revise | orders/2/revise
+
+{
+  "revisedOrderLineItems": [
+    {
+      "menuItemId": "0",
+      "quantity": 10
+    }
+  ]
+}
+ | {
+  "orderId": 2,
+  "state": "APPROVED",
+  "orderTotal": "100000.00"
+} | PASS | xref:A-TS08[Attachment TS08]
+
 |===
 
 === Attachment Result
@@ -342,6 +365,10 @@ image::attachment-ts/TS05.jpg
 
 image::attachment-ts/TS06.jpg
 
+<<A-TS07, Attachment Result TS07>>
 
+image::attachment-ts/TS07.jpg
 
+<<A-TS08, Attachment Result TS08>>
 
+image::attachment-ts/TS08.jpg
