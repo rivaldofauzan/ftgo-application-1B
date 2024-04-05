@@ -230,7 +230,7 @@ For example, I find it convenient to launch my IDE from the command line and aft
 
 == Test Scenario
 [cols="1,2,2,3,3,2,2"]
-.Test Scenario
+=== .Test Scenario
 |===
 | Test Id | Method | Endpoint | Test Data | Actual Result | Result | Attachment Result
 
@@ -255,12 +255,12 @@ For example, I find it convenient to launch my IDE from the command line and aft
 
 |===
 
-.Attachment Result
+=== Attachment Result
 <<A-TS01, Attachment Result TS01>>
 
-image::https://drive.google.com/file/d/1r5RS2xAcoXe30VRAs-wkPUp12beSRYYv
+image::attachment-ts/TS01.jpg
 
 <<A-TS02, Attachment Result TS02>>
 
-image::https://drive.google.com/file/d/11QDt0e8mAa2Hk6HKjRWjN5yAusdGgZ_g
+image::attachment-ts/TS02.jpg
 
