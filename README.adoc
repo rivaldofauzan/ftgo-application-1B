@@ -371,4 +371,4 @@ image::./attachment-ts/TS07.jpg[]
 
 <<A-TS08, Attachment Result TS08>>
 
-image::./attachment-ts/TS08.jpg[width=70%]
+image::./attachment-ts/TS08.jpg[]
