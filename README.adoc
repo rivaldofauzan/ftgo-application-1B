@@ -257,8 +257,10 @@ For example, I find it convenient to launch my IDE from the command line and aft
 
 .Attachment Result
 <<A-TS01, Attachment Result TS01>>
-image::https://drive.google.com/file/d/1r5RS2xAcoXe30VRAs-wkPUp12beSRYYv/view?usp=sharing
+
+image::https://drive.google.com/file/d/1r5RS2xAcoXe30VRAs-wkPUp12beSRYYv
 
 <<A-TS02, Attachment Result TS02>>
-image::https://drive.google.com/file/d/11QDt0e8mAa2Hk6HKjRWjN5yAusdGgZ_g/view?usp=sharing
+
+image::https://drive.google.com/file/d/11QDt0e8mAa2Hk6HKjRWjN5yAusdGgZ_g
 
